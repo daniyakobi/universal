@@ -1,0 +1,71 @@
+.mobile
+  &-menu
+    visibility: hidden
+    position: fixed
+    top: 50px
+    left: -100%
+    z-index: 99
+    width: 65%
+    height: 100%
+    overflow: auto
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: $text-color
+    transition: all 0.3s ease 0s
+    &__text
+      color: $white
+      margin-bottom: 5px
+      font-size: 14px
+      line-height: 20px
+    &__wrapper
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding-top: 10px
+      padding-bottom: 20px
+    &__icon
+      fill: $white
+    &__search
+      display: flex
+      align-items: center
+      margin: auto
+      margin-top: 0
+      margin-bottom: 20px
+      width: 250px
+    &__list
+      display: flex
+      flex-direction: column
+      align-items: center
+      list-style-type: none
+      margin: 0
+      padding: 0
+      padding-bottom: 100px
+    &__item
+      margin-bottom: 15px
+    &__link
+      color: $white
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+    &__button
+      background-color: inherit
+      img
+        width: 20px
+        height: 20px
+    &__input
+      width: 100%
+      border: 1px solid $burger-color
+      border-radius: 4px
+      background-color: inherit
+      color: $burger-color
+      padding: 5px 7px
+      outline: none
+      font-size: 14px
+      line-height: 20px
+      &:placeholder
+        color: $subscribe-text-color
+.degree
+  display: flex
+  flex-direction: row
