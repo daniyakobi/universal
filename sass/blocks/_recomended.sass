@@ -1,0 +1,84 @@
+.cube
+  display: none
+.recomended
+  margin-top: -290px
+  margin-bottom: 30px
+  &-wrapper
+    background-color: $white
+    border-radius: 10px
+    display: flex
+  &__img
+    border-radius: 10px 0 0 10px
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &__use
+    max-width: 870px
+    height: 570px
+    background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+    border-radius: 10px 0 0 10px
+  &__right
+    display: flex
+    flex-direction: column
+    width: 272px
+  &__title
+    width: 100%
+    display: flex
+    align-items: center
+    padding: 20px 25px
+    h2
+      margin: 0
+      padding: 0
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: $text-color
+.recommendation
+  width: 100%
+  position: relative
+  padding: 17px 25px 19px 25px
+  border-top: 1px solid $line-color
+  &__title
+    margin-bottom: 8px
+    color: #3BBDC4
+    font-size: 12px
+    line-height: 15px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+  &__text
+    width: 182px
+    span
+      color: $header-text-color
+      font-size: 14px
+      line-height: 20px
+    img
+      position: absolute
+      margin-left: 3px
+  .active
+    background-color: $recommendation-card-color
+    .cube
+      display: block
+      position: absolute
+      left: -8px
+      top: 39px
+      transform: rotate(45deg)
+      background-color: $recommendation-card-color
+      width: 15px
+      height: 15px
+  &:nth-child(3)
+    .recommendation
+      &__title
+        color: #6E99AE
+  &:nth-child(4)
+    .recommendation
+      &__title
+        color: #AC8EE3
+  &:nth-child(5)
+    .recommendation
+      &__title
+        color: #FFA34D
+  &:nth-child(6)
+    .recommendation
+      &__title
+        color: #3DC47E

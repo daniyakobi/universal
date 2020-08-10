@@ -31,6 +31,9 @@
       display: flex
       align-items: center
       padding-left: 30px
+    &__main
+      &-logo
+        margin-left: -32px
     &__img
       margin-right: 15px
     &__text
@@ -97,6 +100,7 @@
         background-color: $burger-color
         top: -6px
         left: 0
+        transition: all 0.3s ease 0s
       &::before
         position: absolute
         content: ''
@@ -105,6 +109,19 @@
         background-color: $burger-color
         top: 6px
         left: 0
+        transition: all 0.3s ease 0s
+.active
+  &-burger
+    .menu
+      &-burger
+        &__line
+          background-color: inherit
+          &::after
+            transform: rotate(45deg)
+            top: 0
+          &::before
+            transform: rotate(-45deg)
+            top: 0
 .search
   display: flex
   align-items: center
@@ -125,9 +142,9 @@
     width: 66px
     height: 44px
     object-fit: cover
-    border-left: 3px solid #BCBFC2
-    border-top: 3px solid #BCBFC2
-    border-right: 3px solid #BCBFC2
+    border-left: 3px solid $burger-color
+    border-top: 3px solid $burger-color
+    border-right: 3px solid $burger-color
     margin-right: 10px
     margin-bottom: -7px
   &__description

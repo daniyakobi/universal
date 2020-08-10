@@ -9,7 +9,19 @@
       width: 100px
       line-height: 20px
       font-size: 14px
-
+  .mobile
+    &-menu
+      width: 45%
+  .navbar
+    &-middle
+      &__main
+        &-logo
+          margin-left: -55px
+      &__logo
+        padding-left: 20px
+      &__img
+        margin-right: 10px
+  
 @media screen and  ( max-width: 992px )
   .container
     max-width: 725px
@@ -34,6 +46,9 @@
     &-middle
       &__logo
         padding-left: 15px
+      &__main
+        &-logo
+          margin-left: -35px
       &__text
         display: none
       &__img
@@ -45,16 +60,11 @@
         letter-spacing: -0.5px
   .subscribe
     margin-right: 40px
-
-@media screen and ( max-width: 767px )
-  body.lock 
-    overflow: hidden
   .mobile
     &-menu
-      visibility: visible
-  .active
-    &-menu
-      left: 0
+      width: 60%
+
+@media screen and ( max-width: 767px )
   .container
     max-width: 700px
     width: 92%
@@ -72,12 +82,13 @@
     display: none
   .overlay
     margin-top: 134px
+
 @media screen and ( max-width: 720px )
   .hotnew
     &__text
       width: 185px
 
-  @media screen and ( max-width: 690px )
+@media screen and ( max-width: 690px )
    .hotnew
     &__text
       width: 170px
@@ -103,6 +114,9 @@
       justify-content: center
       padding-top: 15px
       padding-bottom: 15px
+      &__main
+        &-logo
+          margin-left: 0
       &__logo
         display: none
       &__weather
@@ -127,7 +141,10 @@
     &:nth-child(3)
       margin-bottom: 15px
     &__text
+      margin-right: 0
       width: 82%
     &__img
       padding-right: 0
       border-right: 0
+      order: -1
+      margin-right: 15px
