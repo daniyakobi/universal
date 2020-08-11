@@ -1,6 +1,6 @@
 .cube
   display: none
-.recomended
+.recommended
   margin-top: -290px
   margin-bottom: 30px
   &-wrapper
@@ -13,10 +13,23 @@
     height: 100%
     object-fit: cover
   &__use
-    max-width: 870px
+    display: none
+    position: relative
+    width: 870px
     height: 570px
-    background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
     border-radius: 10px 0 0 10px
+    background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)) 
+    &-title
+      position: absolute
+      z-index: 5
+      top: 285px
+      left: 55px
+      color: $white
+      font-family: Roboto Slab
+      font-weight: bold
+      font-size: 40px
+      line-height: 50px
+      max-width: 585px
   &__right
     display: flex
     flex-direction: column
@@ -34,6 +47,111 @@
       letter-spacing: 0.5px
       text-transform: uppercase
       color: $text-color
+  &__user
+    position: absolute
+    top: 55px
+    left: 55px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    z-index: 5
+  &__text
+    display: flex
+    flex-direction: column
+  &__name
+    font-size: 14px
+    line-height: 20px
+    color: $white
+    mix-blend-mode: normal
+    opacity: 0.85
+  &__class
+    font-size: 12px
+    line-height: 15px
+    color: $white
+    opacity: 0.4
+  &__avatar
+    width: 45px
+    height: 45px
+    border-radius: 50%
+    margin-right: 10px
+    object-fit: cover
+  &__description
+    position: absolute
+    z-index: 5
+    top: 245px
+    left: 55px
+    color: $blue-75
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    font-size: 12px
+    line-height: 15px
+  &__buttons
+    position: absolute
+    z-index: 5
+    top: 425px
+    left: 55px
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__button
+    margin-right: 30px
+  &__play
+    margin-right: 10px
+.play
+  border: none
+  outline: none
+  border-radius: 50%
+  width: 50px
+  height: 50px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  background-color: inherit
+  padding: 0
+  &-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+  img
+    display: block
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &__description
+    display: flex
+    flex-direction: column
+  &__title
+    font-size: 14px
+    line-height: 20px
+    color: $white
+    mix-blend-mode: normal
+    opacity: 0.85
+  &__timecode
+    font-size: 12px
+    line-height: 15px
+    color: $white
+    mix-blend-mode: normal
+    opacity: 0.4
+.tab-active
+  display: block
+.button
+  background-color: $blue-75
+  border: none
+  outline: none
+  width: 138px
+  height: 40px
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 20px
+  span
+    font-size: 14px
+    line-height: 20px
+    color: $white
+    margin-right: 5px
+    display: block
+  img
+    display: block
 .recommendation
   width: 100%
   position: relative
@@ -55,17 +173,6 @@
     img
       position: absolute
       margin-left: 3px
-  .active
-    background-color: $recommendation-card-color
-    .cube
-      display: block
-      position: absolute
-      left: -8px
-      top: 39px
-      transform: rotate(45deg)
-      background-color: $recommendation-card-color
-      width: 15px
-      height: 15px
   &:nth-child(3)
     .recommendation
       &__title
@@ -82,3 +189,14 @@
     .recommendation
       &__title
         color: #3DC47E
+.active
+    background-color: $recommendation-card-color
+    .cube
+      display: block
+      position: absolute
+      left: -8px
+      top: 39px
+      transform: rotate(45deg)
+      background-color: $recommendation-card-color
+      width: 15px
+      height: 15px
