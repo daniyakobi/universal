@@ -107,6 +107,15 @@
       grid-template-areas: "item-1 item-1" "item-1 item-1" "item-2 item-8" "item-2 item-8" "item-3 item-8" "item-3 item-8"  "item-4 item-5"  "item-6 item-7" 
     &__item-7
       display: block
+  .preview
+    &-new
+      padding-top: 40px
+      padding-bottom: 45px
+      &__title
+        max-width: 570px
+        font-size: 35px
+        line-height: 45px
+
 
 @media screen and ( max-width: 767px )
   .container
@@ -140,6 +149,12 @@
       grid-template-rows: repeat(8, 180px)
       grid-template-areas: "item-1 item-1" "item-1 item-1" "item-2 item-8" "item-2 item-8" "item-3 item-8" "item-3 item-8"  "item-4 item-5"  "item-6 item-7" 
       grid-gap: 15px
+  .preview
+    &-new
+      &__title
+        max-width: 490px
+        font-size: 30px
+        line-height: 40px
 
 @media screen and ( max-width: 720px )
   .hotnew
@@ -246,6 +261,12 @@
       grid-template-areas: "item-8 item-8" "item-8 item-8" "item-8 item-8" "item-8 item-8"  "item-2 item-3"  "item-2 item-3" "item-4 item-5" "item-6 item-7" 
     &__item-1 
       display: none
+  .preview
+    &-new
+      &__title
+        max-width: 320px
+        font-size: 18px
+        line-height: 25px
       
 @media screen and ( max-width: 510px )
    .grid
