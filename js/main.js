@@ -5,6 +5,11 @@ $(document).ready(function(){
     $('.mobile-menu').toggleClass('active-menu');
     $('body').toggleClass('lock');
   });
+  $('.bookmark').click(function(event){
+    var id = $(this).attr('data-book'),
+      content = $('.bookmark[data-book="'+ id +'"]');
+      content.toggleClass('bookmark-active');
+  });
   // Табы
   $('.recommendation').click(function() {
     var id = $(this).attr('data-tab'),

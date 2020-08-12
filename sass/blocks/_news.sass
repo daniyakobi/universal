@@ -1,0 +1,173 @@
+.news
+  margin-bottom: 60px
+  &-container
+    display: flex
+    align-items: flex-start
+.main
+  &-section
+    max-width: 848px
+    margin-right: 29px
+    background-color: inherit
+.sidebar
+  width: 263px
+  background-color: $white
+  border-radius: 10px
+.new
+  position: relative
+  padding: 25px
+  padding-bottom: 0
+  background-color: $white
+  &-wrapper
+    display: flex
+    align-items: flex-start
+    padding-bottom: 25px
+    border-bottom: 1px solid $line-color
+  &__img
+    width: 336px
+    height: 195px
+    object-fit: cover
+    margin-right: 25px
+  &__category
+    font-size: 12px
+    line-height: 15px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    margin-bottom: 15px
+  &__title
+    margin: 0
+    padding: 0
+    font-family: 'Roboto Slab'
+    font-weight: bold
+    font-size: 20px
+    line-height: 25px
+    color: $text-color
+    margin-bottom: 10px
+  &__text
+    font-size: 14px
+    line-height: 20px
+    color: $header-text-color
+    margin-bottom: 20px
+  &__footer
+    display: flex
+    align-items: center
+    &-text
+      font-size: 12px
+      line-height: 15px
+      color: $subscribe-text-color
+  &__icon
+    margin-left: 10px
+    margin-right: 5px
+  &__description
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+  &:first-child
+    .new
+      border-radius: 10px
+      &__category
+        color: #4592FF
+  &:nth-child(2)
+    .new
+      &__category
+        color: #3BBDC4
+  &:nth-child(3)
+    .new
+      &__category
+        color: #FF4F52
+  &:nth-child(4)
+    .new
+      &__category
+        color: #3BBDC4
+  &:nth-child(5)
+    .new
+      &__category
+        color: #FF4F52
+  &:last-child
+    .new
+      border-radius: 0 0 10px 10px
+      &-wrapper
+        border-bottom: none
+      &__category
+        color: #AC8EE3
+.bookmark
+  position: absolute
+  top: 25px
+  right: 25px
+.new
+  &-first
+    border-radius: 10px
+  &-last
+    border-radius: 0 0 10px 10px
+.sidebar
+  &__title
+    margin: 0
+    padding: 0
+    padding: 20px 25px
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    color: $text-color
+    border-bottom: 1px solid $line-color
+  &__item
+    margin-top: 17px
+    margin-left: 25px
+    margin-right: 25px
+    padding-bottom: 17px
+    border-bottom: 1px solid $line-color
+    display: flex
+    align-items: center
+  &__item-1, &__item-2, &__item-3, &__item-4, &__item-5, &__item-6, &__item-7
+    background-repeat: no-repeat
+    background-position: top right
+  &__item-1
+    background-image: url(../img/icons/one.svg)
+  &__item-2
+    background-image: url(../img/icons/two.svg)
+  &__item-3
+    background-image: url(../img/icons/three.svg)
+  &__item-4
+    background-image: url(../img/icons/four.svg)
+  &__item-5
+    background-image: url(../img/icons/five.svg)
+  &__item-6
+    background-image: url(../img/icons/six.svg)
+  &__item-7
+    background-image: url(../img/icons/seven.svg)
+  &__img
+    width: 60px
+    height: 60px
+    object-fit: cover
+    margin-right: 10px
+  &__description
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+  &__name
+    font-size: 14px
+    line-height: 20px
+    color: $header-text-color
+    margin-bottom: 5px
+  &__time
+    font-size: 12px
+    line-height: 15px
+    color: $subscribe-text-color
+  &__footer
+    display: flex
+    align-items: center
+    justify-content: center
+    padding-top: 11px
+    padding-bottom: 14px
+    border-top: 1px solid $line-color
+  &__link
+    font-size: 14px
+    line-height: 20px
+    color: $text-color
+.last
+  border-bottom: none
+.bookmark
+  &-active
+    .bookmark
+      &-icon
+        path
+          fill: #FF4F52
