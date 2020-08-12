@@ -16,7 +16,7 @@
     &-middle
       &__main
         &-logo
-          margin-left: -55px
+          margin-left: 0
       &__logo
         padding-left: 20px
       &__img
@@ -29,6 +29,13 @@
   .recommendation
     padding-top: 17px
     padding-bottom: 17px
+  .grid
+    &-container
+      grid-template-columns: 263px 263px 334px
+      grid-template-rows: repeat(5, 170px)
+      grid-template-areas: "item-1 item-1  item-8" "item-1 item-1 item-8" "item-2 item-3 item-8" "item-2 item-3 item-8" "item-4 item-5 item-6" 
+    &__item-7
+      display: none
 
 @media screen and  ( max-width: 992px )
   .container
@@ -93,6 +100,13 @@
     &__description
       left: 35px
       top: 225px
+  .grid
+    &-container
+      grid-template-columns: 1fr 1fr 
+      grid-template-rows: repeat(8, 170px)
+      grid-template-areas: "item-1 item-1" "item-1 item-1" "item-2 item-8" "item-2 item-8" "item-3 item-8" "item-3 item-8"  "item-4 item-5"  "item-6 item-7" 
+    &__item-7
+      display: block
 
 @media screen and ( max-width: 767px )
   .container
@@ -121,6 +135,11 @@
       &-title
         top: 190px
         max-width: 350px
+  .grid
+    &-container
+      grid-template-rows: repeat(8, 180px)
+      grid-template-areas: "item-1 item-1" "item-1 item-1" "item-2 item-8" "item-2 item-8" "item-3 item-8" "item-3 item-8"  "item-4 item-5"  "item-6 item-7" 
+      grid-gap: 15px
 
 @media screen and ( max-width: 720px )
   .hotnew
@@ -221,6 +240,19 @@
   .active
     .cube
       top: 22px
+  .grid
+    &-container
+      grid-template-rows: repeat(8, 180px) 
+      grid-template-areas: "item-8 item-8" "item-8 item-8" "item-8 item-8" "item-8 item-8"  "item-2 item-3"  "item-2 item-3" "item-4 item-5" "item-6 item-7" 
+    &__item-1 
+      display: none
+      
+@media screen and ( max-width: 510px )
+   .grid
+    &-container
+      grid-template-columns: 1fr
+      grid-template-rows: repeat(12, 180px) 
+      grid-template-areas: "item-8" "item-8" "item-8" "item-8"  "item-2"  "item-2" "item-3" "item-3" "item-4" "item-5" "item-6" "item-7" 
 
 @media screen and ( max-width: 460px )
   .recommended

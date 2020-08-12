@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Universal</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -45,9 +46,9 @@
           <span class="navbar-middle__text">Boston and New York Bear Brunt</span>
         </div>
         <!-- /.navbar-middle__logo -->
-        <div class="navbar-middle__main-logo">
+        <a href="index.html" class="navbar-middle__main-logo">
           <img class="navbar-middle__main-logo" src="img/main-logo.png" alt="Image: Main Logo">
-        </div>
+        </a>
         <!-- /.navbar-middle__title -->
         <div class="navbar-middle__weather">
           <span class="navbar-middle__text navbar-middle__weather-text">Monday, January 1, 2018</span>
@@ -122,19 +123,19 @@
     <div class="hotnews">
       <div class="hotnews-wrapper">
         <div class="hotnew">
-          <span class="hotnew__text">25 Songs That Tell Us Where Music Is Going</span>
+          <a href="#" class="hotnew__text"><span class="hotnew__text">25 Songs That Tell Us Where Music Is Going</span></a>
           <img class="hotnew__img" src="img/hotnew-1.png" alt="Image: Hot New 1">
         </div>
         <div class="hotnew">
-          <span class="hotnew__text">These Ancient Assassins Eat Their Own Kind</span>
+          <a href="#" class="hotnew__text"><span class="hotnew__text">These Ancient Assassins Eat Their Own Kind</span></a>
           <img class="hotnew__img" src="img/hotnew-2.png" alt="Image: Hot New 2">
         </div>
         <div class="hotnew">
-          <span class="hotnew__text">How Do You Teach People to Love Difficult Music?</span>
+          <a href="#" class="hotnew__text"><span class="hotnew__text">How Do You Teach People to Love Difficult Music?</span></a>
           <img class="hotnew__img" src="img/hotnew-3.png" alt="Image: Hot New 3">
         </div>
         <div class="hotnew">
-          <span class="hotnew__text">International Soccer’s Man of Mystery</span>
+          <a href="#" class="hotnew__text"><span class="hotnew__text">International Soccer’s Man of Mystery</span></a>
           <img class="hotnew__img" src="img/hotnew-4.png" alt="Image: Hot New 4">
         </div>
       </div>
@@ -162,9 +163,9 @@
             <img src="img/icons/arrow.svg" alt="Icon: Arrow"> 
           </button>
           <div class="play-wrapper">
-            <button class="play recommended__play">
+            <a data-fancybox href="https://youtu.be/qX-khoqC_io" class="play recommended__play">
               <img src="img/icons/play.svg" alt="Icon: Play">
-            </button>
+            </a>
             <div class="play__description">
               <span class="play__title">The chalk cliff of Beachy Head</span>
               <span class="play__timecode">18:05</span>
@@ -234,12 +235,12 @@
             <img src="img/icons/arrow.svg" alt="Icon: Arrow"> 
           </button>
           <div class="play-wrapper">
-            <button class="play recommended__play">
+            <a data-fancybox href="https://youtu.be/NjF_GZJUEg0"class="play recommended__play">
               <img src="img/icons/play.svg" alt="Icon: Play">
-            </button>
+            </a>
             <div class="play__description">
-              <span class="play__title">The chalk cliff of Beachy Head</span>
-              <span class="play__timecode">18:05</span>
+              <span class="play__title">Top 100 NFL Players of 2020</span>
+              <span class="play__timecode">18:35</span>
             </div>
           </div>
         </div>
@@ -321,7 +322,108 @@
     <!-- /.container -->
   </div>
   <!-- /.recommended --> 
+  <div class="current-news">
+    <div class="container grid-container">
+      <div class="grid__item-1 current-news__card cars">
+        <div class="current-news__main">
+          <span class="current-news__description">Cars</span>
+          <a href="#"><h2 class="current-news__title cars__title">The joy of replicas: A $ 5 million car for $ 50,000</h2></a>
+          <span class="current-news__text">The 31-year-old self-taught engineer and former amateur racer spends his days building artful recreations of one of most iconic sports cars</span>  
+        </div>
+        <div class="current-news__footer">
+          <img src="img/current-avatar-1.png" alt="Image: Avatar" class="cars__avatar">
+          <span class="cars__name">Jessica Miller:</span>
+          <span class="cars__description">Even as the ride-hailing service’s future remem…</span>
+          <img src="img/icons/comment.svg" alt="Icon: Comment" class="cars__icon">
+          <span class="cars__count">342</span>
+        </div>
+      </div>
+      <div class="grid__item-2 current-news__design design">
+        <div class="popular"><span>Popular</span></div>
+        <span class="design__description">Art & Design</span>
+        <a href="#"><h2 class="design__title">Invisible ink: the weird world of tattoo removal – in pictures</h2></a>
+        <div class="design__user">
+          <img src="img/current-avatar-1.png" alt="Image: Avatar" class="design__user-avatar">
+          <div class="design__user-description">
+            <span class="design__user-name">By Sarah Jenkins</span>
+            <div class="design__user-text">
+              <span>Sept 26</span>
+              <img src="img/icons/comment.svg" alt="Icon: Comment" class="design__user-icon">
+              <span>16</span>
+              <img src="img/icons/heart.svg" alt="Icon: Likes" class="design__user-icon">
+              <span>832</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid__item-3 current-news__cats cats">
+        <img src="img/current-3.png" alt="Image: Cat" class="cats__img">
+        <a href="#"><h2 class="cats__title">200+ Doomed Cats Saved From Euthanization</h2></a>
+      </div>
+      <div class="grid__item-4 current-news__card card">
+        <a href="#"><h2 class="card__title">Is Coffee Bad for Bones?</h2></a>
+        <span class="card__text">Coffee drinkers may excrete more calcium, but it doesn’t appear to weaken bones</span>
+        <span class="card__data">Oct 15</span>
+      </div>
+      <div class="grid__item-5 current-news__card card">
+        <a href="#"><h2 class="card__title">What We Manufacture</h2></a>
+        <span class="card__text">A global history of the factory and the modern world that all should read</span>
+        <span class="card__data">Oct 14</span>
+      </div>
+      <div class="grid__item-6 current-news__card card">
+        <a href="#"><h2 class="card__title">It’s a Stressful World</h2></a>
+        <span class="card__text">Can a cruise skeptic enjoy four days on the seas with his family and a bunch of princesses?</span>
+        <span class="card__data">Oct 14</span>
+      </div>
+      <div class="grid__item-7 current-news__card card">
+        <a href="#"><h2 class="card__title">A Treat for Lemon Lovers</h2></a>
+        <span class="card__text">This tangerine, ginger and chocolate tart has verve, depth and a hint of spice</span>
+        <span class="card__data">Oct 15</span>
+      </div>
+      <div class="grid__item-8 current-news__columns columns">
+        <h2 class="columns__title">Columns</h2>
+        <div class="columns__item">
+         <a href="#"> <h2 class="columns__item-title">Architecture is the thoughtful making of space</h2></a>
+          <div class="columns__item-user">
+            <img src="img/current-avatar-2.png" alt="Image: Avatar" class="columns__item-avatar">
+            <div class="columns__item-description">
+              <span class="columns__item-name">David Williams</span>
+              <span class="columns__item-class">Architect</span>
+            </div>
+          </div>
+        </div>
+        <div class="columns__item">
+          <a href="#"><h2 class="columns__item-title">The details are not the details. They make the design.</h2></a>
+          <div class="columns__item-user">
+            <img src="img/current-avatar-3.png" alt="Image: Avatar" class="columns__item-avatar">
+            <div class="columns__item-description">
+              <span class="columns__item-name">Alexandra Green</span>
+              <span class="columns__item-class">Interior designer</span>
+            </div>
+          </div>
+        </div>
+        <div class="columns__item last">
+          <a href="#"><h2 class="columns__item-title">Live life to the fullest, and focus on the positive</h2></a>
+          <div class="columns__item-user">
+            <img src="img/current-avatar-4.png" alt="Image: Avatar" class="columns__item-avatar">
+            <div class="columns__item-description">
+              <span class="columns__item-name">Olivia Thompson</span>
+              <span class="columns__item-class">Coacher</span>
+            </div>
+          </div>
+        </div>
+        <div class="columns__footer">
+          <a href="#" class="columns__link">Read more</a>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.current-news -->
+  .
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
