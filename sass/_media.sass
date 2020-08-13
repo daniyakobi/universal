@@ -44,7 +44,16 @@
       align-items: center
     &__img
       width: 300px
-
+  .news
+    &-grid
+      grid-template-columns: 394px 230px 230px
+      grid-template-rows: repeat(3, 180px)
+      grid-template-areas: "grid-1 grid-2 grid-2" "grid-1 grid-2 grid-2" "grid-1 grid-3 grid-4"
+  .content
+    &__title
+      font-size: 35px
+      line-height: 45px
+  
 @media screen and  ( max-width: 992px )
   .container
     max-width: 725px
@@ -132,6 +141,12 @@
     &__img
       margin-right: 0
       margin-bottom: 25px
+  .news
+    &-grid
+      grid-gap: 20px
+      grid-template-columns: 352px 100px 252px
+      grid-template-rows: repeat(5, 170px)
+      grid-template-areas: "grid-1 grid-1 grid-1" "grid-1 grid-1 grid-1" "grid-1 grid-1 grid-1" "grid-2 grid-2 grid-3" "grid-2 grid-2 grid-4"
 
 @media screen and ( max-width: 767px )
   .container
@@ -179,6 +194,12 @@
     &__img
       width: 70%
       height: 50%
+  .news
+    &-grid
+      grid-gap: 15px
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: repeat(6, 170px)
+      grid-template-areas: "grid-1 grid-1" "grid-1 grid-1" "grid-1 grid-1" "grid-2 grid-2" "grid-2 grid-2" "grid-3 grid-4"
 
 @media screen and ( max-width: 720px )
   .hotnew
@@ -308,8 +329,26 @@
   .new
     &:nth-child(2), &:nth-child(5)
       display: none
-    
-      
+  .news
+    &-grid
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: repeat(6, 190px)
+      grid-template-areas: "grid-1 grid-1" "grid-1 grid-1"  "grid-2 grid-2" "grid-2 grid-2" "grid-3 grid-3" "grid-4 grid-4"
+    &__grid-2
+      background-image: none
+    &__grid-3
+      .card
+        padding-top: 15px
+  .content
+    &__title
+      font-size: 20px
+      line-height: 25px
+  .big
+    &-card
+      &__title
+        width: 230px  
+
+  
 @media screen and ( max-width: 510px )
    .grid
     &-container

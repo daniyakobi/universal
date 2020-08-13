@@ -19,4 +19,28 @@ $(document).ready(function(){
     $('.recommended__use.tab-active').removeClass('tab-active'); 
     content.addClass('tab-active');
   });
+
+  var mySwiper = new Swiper('.news-slider', {
+    loop: true,
+    speed: 1500,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+      dynamicBullet: true,
+      dynamicMainBullets: 5,
+    },
+    keyboard: {enabled: true,onlyInViewport: false,},
+    autoplay: {
+      delay: 3000,
+    },
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true
+    },
+    coverflowEffect: {
+      rotate: 30,
+      slideShadows: false,
+    }
+  });
 });

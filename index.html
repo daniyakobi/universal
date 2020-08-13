@@ -6,6 +6,7 @@
   <title>Universal</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -235,7 +236,7 @@
             <img src="img/icons/arrow.svg" alt="Icon: Arrow"> 
           </button>
           <div class="play-wrapper">
-            <a data-fancybox href="https://youtu.be/NjF_GZJUEg0"class="play recommended__play">
+            <a data-fancybox href="https://youtu.be/NjF_GZJUEg0" class="play recommended__play">
               <img src="img/icons/play.svg" alt="Icon: Play">
             </a>
             <div class="play__description">
@@ -637,8 +638,68 @@
     </div>
   </div>
   <!-- /.news -->
+  <div class="news-bottom">
+    <div class="container news-grid">
+      <div class="news__grid-1">
+        <div class="swiper-container news-slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide news__slide-1"></div>
+              <!-- Slide 1 -->
+              <div class="swiper-slide news__slide-2"></div>
+              <!-- Slide 2 -->
+              <div class="swiper-slide news__slide-3"></div>
+              <!-- Slide 3 -->
+              <div class="swiper-slide news__slide-4"></div>
+              <!-- Slide 4 -->
+              <div class="swiper-slide news__slide-5"></div>
+              <!-- Slide 5 -->
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Content -->
+          <div class="news-bottom__content content">
+            <img src="img/content-avatar-1.png" alt="Image: Avatar" class="content__avatar">
+            <span class="content__name">By Sarah Jenkins</span>
+            <span class="content__class">Photographer</span>
+            <h2 class="content__title">Readers' Choice winners: Your wine country favorites</h2>
+            <button class="content__button">
+              <img src="img/icons/photos.svg" alt="Icon: Photo">
+              <span class="content__text">Watch photos</span>
+              <span class="content__quantity">26</span>
+            </button>
+          </div>
+          <div class="hot"><span>Hot</span></div>
+        </div>
+      </div>
+      <!-- /.news-slider -->
+      <div class="news__grid-2 news-bottom__big big-card">
+        <span class="big-card__description">Careers</span>
+        <h2 class="big-card__title">Had a Job Interview but No Callback? Here’s What to Do</h2>
+        <span class="big-card__text">Try to understand the culture of the company where you want to work and be authentic in your interview, experts emphasize</span>
+        <button class="button big-card__button">
+          <span>Read more</span>
+          <img src="img/icons/arrow.svg" alt="Icon: Arrow"> 
+        </button>
+      </div>
+      <div class="news__grid-3 news-bottom__card card">
+        <a href="#"><h2 class="card__title">Is Coffee Bad for Bones?</h2></a>
+        <span class="card__text">Coffee drinkers may excrete more calcium, but it doesn’t appear to weaken bones</span>
+        <span class="card__data">Oct 15</span>
+      </div>
+      <div class="news__grid-4 news-bottom__card card">
+        <a href="#"><h2 class="card__title">What We Manufacture</h2></a>
+        <span class="card__text">A global history of the factory and the modern world that all should read</span>
+        <span class="card__data">Oct 14</span>
+      </div>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.news-bottom -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/swiper.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
