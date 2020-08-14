@@ -147,6 +147,20 @@
       grid-template-columns: 352px 100px 252px
       grid-template-rows: repeat(5, 170px)
       grid-template-areas: "grid-1 grid-1 grid-1" "grid-1 grid-1 grid-1" "grid-1 grid-1 grid-1" "grid-2 grid-2 grid-3" "grid-2 grid-2 grid-4"
+  .footer
+    &-grid
+      grid-template-rows: 245px 304px 173px 167px
+    &__navbar
+      flex-direction: column
+      align-items: flex-start
+      &-left
+        margin-bottom: 15px
+    &__bottom
+      flex-direction: column
+      align-items: flex-start
+      &-left
+        width: 100%
+        margin-bottom: 15px
 
 @media screen and ( max-width: 767px )
   .container
@@ -200,7 +214,14 @@
       grid-template-columns: 1fr 1fr
       grid-template-rows: repeat(6, 170px)
       grid-template-areas: "grid-1 grid-1" "grid-1 grid-1" "grid-1 grid-1" "grid-2 grid-2" "grid-2 grid-2" "grid-3 grid-4"
-
+  .footer
+    &-grid
+      grid-template-columns: 1fr 1fr 1fr
+      grid-template-rows: 245px 304px 304px 173px 167px
+      grid-template-areas: "footer-1 footer-1 footer-1" "footer-2 footer-3 footer-4" "footer-5 footer-6 footer-7" "footer-8 footer-8 footer-8" "footer-9 footer-9 footer-9"
+    &__navbar
+      &-link
+        font-size: 12px
 @media screen and ( max-width: 720px )
   .hotnew
     &__text
@@ -347,8 +368,47 @@
     &-card
       &__title
         width: 230px  
-
-  
+  .footer
+    &-grid
+      grid-template-columns: 1fr
+      grid-template-rows: 300px 304px 304px 304px 304px 304px 304px 263px 230px
+      grid-template-areas: "footer-1" "footer-2" "footer-3" "footer-4" "footer-5" "footer-6" "footer-7" "footer-8" "footer-9"
+    &__subscribe
+      &-title
+        font-size: 30px
+        line-height: 40px
+      &-form
+        width: 80%
+        flex-direction: column
+        align-items: center
+      &-input
+        width: 100%
+        margin-right: 0
+        &-group
+          width: 100%
+          display: flex
+          flex-direction: column
+          height: 60px
+      &-button
+        margin-top: 20px
+    &__list
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__navbar
+      flex-direction: row
+      justify-content: space-around
+      &-left, &-right
+        flex-direction: column
+        align-items: center
+      &-img
+        margin-right: 0
+        margin-bottom: 10px
+      &-logo, &-link
+        margin-right: 0
+        margin-bottom: 10px
+      &-link:last-child
+        margin-bottom: 0
 @media screen and ( max-width: 510px )
    .grid
     &-container

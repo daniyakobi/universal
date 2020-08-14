@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <div class="navbar-top">
+        <div class="menu">
+          <div class="menu-burger">
+            <span class="menu-burger__line"></span>
+          </div>
+          <!-- /.menu-burger -->
+          <span class="navbar-top__title">Sections</span>
+        </div>
+        <!-- /.menu -->
+        <form class="search">
+         <button class="search__button"> <img src="img/icons/search.svg" alt="Icon: Search" ></button>
+          <input type="text" class="navbar-top__search" placeholder="Search">
+        </form>
+        <!-- /.search -->    
+        <div class="subscribe">
+          <img src="img/navbar-top-img.png" alt="Image: Subscribe Image" class="subscribe__img">
+          <div class="subscribe__description">
+            <span class="subscribe__title">Subscribe Now</span>
+            <span class="subscribe__text">3 month for $19</span>
+          </div>
+        </div>
+        <!-- /.subscribe -->    
+        <div class="user">
+          <img src="img/icons/user.svg" alt="Icon: User" class="user__avatar">
+          <a href="#" class="user__link">Sign In</a>
+        </div>
+        <!-- /.user -->
+      </div>
+      <!-- /.navbar-top -->
+      <div class="navbar-middle">
+        <div class="navbar-middle__logo">
+          <img class="navbar-middle__img" src="img/logo.png" alt="Image: Logo">
+          <span class="navbar-middle__text">Boston and New York Bear Brunt</span>
+        </div>
+        <!-- /.navbar-middle__logo -->
+        <a href="index.html" class="navbar-middle__main-logo">
+          <img class="navbar-middle__main-logo" src="img/main-logo.png" alt="Image: Main Logo">
+        </a>
+        <!-- /.navbar-middle__title -->
+        <div class="navbar-middle__weather">
+          <span class="navbar-middle__text navbar-middle__weather-text">Monday, January 1, 2018</span>
+          <img class="navbar-middle__icon" src="img/icons/sun.svg" alt="Icon: Sun">
+          <span class="navbar-middle__text navbar-middle__degree">- 23 °C</span>
+        </div>
+        <!-- /.navbar-middle__weather -->
+      </div>
+      <!-- /.navbar-middle -->
+    </div>
+    <!-- /.container -->
+    <div class="navbar-bottom">
+      <div class="container">
+        <ul class="navbar-menu">
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">News</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Opinion</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Science</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Life</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Travel</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Moneys</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Art & Design</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Sports</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">People</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Health</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Education</a></li>
+        </ul>
+        <!-- /.navbar-menu -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.navbar-bottom -->
+  </header>
+  <!-- /.navbar -->
+  <div class="mobile-menu">
+    <div class="mobile-menu__wrapper">
+      <span class="mobile-menu__text">Boston and New York Bear Brunt</span>
+      <span class="mobile-menu__text mobile-menu__weather-text">Monday, January 1, 2018</span>
+      <div class="degree">
+        <img class="mobile-menu__icon" src="img/icons/sun.svg" alt="Icon: Sun">
+        <span class="mobile-menu__text mobile-menu__degree">- 23 °C</span>
+      </div>
+    </div>
+    <form class="mobile-menu__search">
+      <button class="search__button mobile-menu__button"> <img src="img/icons/search.svg" alt="Icon: Search" ></button>
+      <input type="text" class="mobile-menu__input" placeholder="Search">
+    </form>
+    <!-- /.search -->    
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">News</a></li>
+      <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Opinion</a></li>
+      <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Science</a></li>
+      <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Life</a></li>
+      <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Travel</a></li>
+      <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Moneys</a></li>
+      <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Art & Design</a></li>
+      <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Sports</a></li>
+      <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">People</a></li>
+      <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Health</a></li>
+      <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Education</a></li>
+    </ul>
+    <div class="mobile-menu__subscribe">
+      <img src="img/navbar-top-img.png" alt="Image: Subscribe Image" class="subscribe__img">
+      <div class="subscribe__description">
+        <span class="subscribe__title">Subscribe Now</span>
+        <span class="subscribe__text">3 month for $19</span>
+      </div>
+    </div>
+    <!-- /.subscribe -->  
+  </div>
+  <!-- /.mobile-menu -->
+  <div class="overlay">
+    <div class="container thank">
+      <div class="thank-wrapper">
+        <h2 class="thank__title">Thanks for subscribing to our updates!</h2>
+        <form action="#">
+          <button class="button thank__button">
+            <img src="img/icons/home.svg" alt="Icon: Arrow"> 
+            <span>Back to main</span>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- /.thank -->
+  </div>
+  <!-- /.overlay-->
+  <div class="footer">
+    <div class="container footer-grid">
+      <div class="subscribe footer__subscribe footer__grid-1">
+        <h2 class="subscribe__title">Subscribe now and get 20% off</h2>
+        <form action="send.php" method="POST" class="subscribe__form">
+          <input required type="text" class="subscribe__input" placeholder="Enter your email">
+          <button class="subscribe__button"><span>Subscribe</span></button>
+        </form>
+      </div>
+      <!-- /.subscribe -->
+      <ul class="footer__list footer__grid-2">
+        <h2 class="footer__title">News</h2>
+        <li class="footer__list-item"><a href="#" class="footer__link">Nation</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__link">World</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__link">Politics</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__link">Solar Eclipse</a></li>
+      </ul>
+      <ul class="footer__list footer__grid-3">
+        <h2 class="footer__title">Arts</h2>
+        <li class="footer__list-item"><a href="#" class="footer__link">Art & Design</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__link">Movies</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__link">People</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__link">Video: Arts</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__link">Theater</a></li>
+      </ul>
+      <ul class="footer__list footer__grid-4">
+        <h2 class="footer__title">Travel</h2>
+        <li class="footer__list-item"><a href="#" class="footer__link">Destinations</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__link">Flights</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__link">Business Travel</a></li>
+      </ul>
+      <ul class="footer__list footer__grid-5">
+        <h2 class="footer__title">Sports</h2>
+        <li class="footer__list-item"><a href="#" class="footer__link">Olympics</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__link">Motor Sports</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__link">Volleyball</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__link">MMA</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__link">Cycling</a></li>
+      </ul>
+      <ul class="footer__list footer__grid-6">
+        <h2 class="footer__title">Tech</h2>
+        <li class="footer__list-item"><a href="#" class="footer__link">Tech</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__link">Tech Columnists</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__link">Tech Reviews</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__link">Talking Tech</a></li>
+      </ul>
+      <ul class="footer__list footer__grid-7">
+        <h2 class="footer__title">Moneys</h2>
+        <li class="footer__list-item"><a href="#" class="footer__link">Markets</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__link">Business</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__link">Personal Finance</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__link">Retirement</a></li>
+        <li class="footer__list-item"><a href="#" class="footer__link">Careers</a></li>
+      </ul>
+      <div class="footer__navbar footer__grid-8">
+        <div class="footer__navbar-left">
+          <a href="#"><img src="img/universal.png" alt="Image: Universal Logo" class="footer__navbar-logo"></a>
+          <a href="#" class="footer__navbar-link">Contact Us</a>
+          <a href="#" class="footer__navbar-link">Work with Us</a>
+          <a href="#" class="footer__navbar-link">Advertise</a>
+          <a href="#" class="footer__navbar-link">Your Ad Choise</a>
+        </div>
+        <div class="footer__navbar-right ">
+          <a href="#"><img src="img/facebook.png" alt="Image: Facebook" class="footer__navbar-img"></a>
+          <a href="#"><img src="img/twitter.png" alt="Image: Twitter" class="footer__navbar-img"></a>
+          <a href="#"> <img src="img/youtube.png" alt="Image: Youtube" class="footer__navbar-img"></a>
+          <a href="#"><img src="img/instagramm.png" alt="Image: Instagramm" class="footer__navbar-img"></a>
+        </div>
+      </div>
+      <!-- /.footer__navbar -->
+      <div class="footer__bottom footer__grid-9">
+        <span class="footer__bottom-left">Universal’s business concept is to offer fashion and quality at the best price in a sustainable way. Universal has since it was founded in 2015 grown into one of the world's leading fashion companies.</span>
+        <span class="footer__bottom-right">© 2019 Universal UI Kit</span>
+      </div>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.footer -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

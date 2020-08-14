@@ -43,4 +43,5 @@ $(document).ready(function(){
       slideShadows: false,
     }
   });
+  $('.footer__subscribe-form').validate({errorClass: "invalid",email: {required: "We need your email address to contact you",email: "Your email address must be in the format of name@domain.com"},});
 });
